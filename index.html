@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="script.js"></script>
+        <title>CIG | Calculadora de Idade Gestacional</title>
+    </head>
+        <body>
+            <h1 id="page_title">CIG</h1>
+             <!-- Tab links -->
+            <div class="tab">
+                <button class="tablinks" onclick="openTab(event, 'DUM')" id="defaultOpen">D.U.M.</button>
+                <button class="tablinks" onclick="openTab(event, 'Ultrassom')">Ultrassom</button>
+            </div>
+            <!-- Tab content -->
+            <!-- First screen  -->
+            <div id="DUM" class="tabcontent">
+                <h3>Cálculo pela D.U.M.</h3>
+                <form action="" id="container">
+                    <label for="dum_date">D.U.M.:</label>
+                    <p><input type="date" id="dum_date" name="dum_date" onchange="dateCalc()"></p>
+                </form>
+                <p>Primigesta?</p>
+                <p id="choice_toggle">Não <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                  </label> Sim</p>
+                <p>Idade Gestacional:</p>
+                <p id="dum_result">Não calculada</p>
+            </div>
+            <!-- Second screen  -->
+            <div id="Ultrassom" class="tabcontent">
+                <h3>Cálculo pelo Ultrassom</h3>
+                <form action="" id="container">
+                    <label for="dum_date">Data do Ultrassom:</label>
+                    <p><input type="date" id="ult_date" name="ult_date" onchange="dateCalc()"></p>
+                </form>
+                <p>Primigesta?</p>
+                <p id="choice_toggle">Não <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                  </label> Sim</p>
+                <p>Idade Gestacional:</p>
+                <p id="ult_result">Não calculada</p>
+                
+                <!--<form action="" id="container">
+                    <p>Ultrassom (caixa de seleção de data)</p>
+                    <p>Feito até a 10ª semana? Sim (chave) Não</p>
+                    <p>Primigesta? Sim (chave) Não</p>
+                    <p>Idade Gestacional no ultrassom: (informação)</p>
+                    <p>Idade Gestacional: (resultado em semana e dias)</p>
+                </form>-->
+            </div>    
+        </body>
+</html>
