@@ -8,49 +8,52 @@
     </head>
         <body>
             <h1 id="page_title">CIG</h1>
-             <!-- Tab links -->
+            <!-- Tab links -->
             <div class="tab">
-                <button class="tablinks" onclick="openTab(event, 'DUM')" id="defaultOpen">D.U.M.</button>
-                <button class="tablinks" onclick="openTab(event, 'Ultrassom')">Ultrassom</button>
+                <button class="tablinks" onclick="openTab(event, 'DUM_page')" id="defaultOpen">DUM</button>
+                <button class="tablinks" onclick="openTab(event, 'Ultrassom_page')">Ultrassom</button>
             </div>
             <!-- Tab content -->
             <!-- First screen  -->
-            <div id="DUM" class="tabcontent">
-                <h3>Cálculo pela D.U.M.</h3>
+            <div id="DUM_page" class="tabcontent">
                 <form action="" id="container">
-                    <label for="dum_date">D.U.M.:</label>
+                    <p id="gest">Idade Gestacional:</p>
+                    <p id="dum_result">Não calculada</p>
+                    <label for="dum_date" id="dum">DUM:</label>
                     <p><input type="date" id="dum_date" name="dum_date" onchange="dateCalc()"></p>
+                    <p id="prim">Primigesta?</p>
+                    <div class="toggle-button-cover" id="toggle_button">
+                        <div class="button-cover">
+                            <div class="button r" id="button-3">
+                                <input type="checkbox" class="checkbox" onchange="primHandler()"/>
+                                <div class="knobs"></div>
+                                <div class="layer"></div>
+                            </div>
+                        </div>
+                    </div>
                 </form>
-                <p>Primigesta?</p>
-                <p id="choice_toggle">Não <label class="switch">
-                    <input type="checkbox">
-                    <span class="slider round"></span>
-                  </label> Sim</p>
-                <p>Idade Gestacional:</p>
-                <p id="dum_result">Não calculada</p>
             </div>
             <!-- Second screen  -->
-            <div id="Ultrassom" class="tabcontent">
-                <h3>Cálculo pelo Ultrassom</h3>
+            <div id="Ultrassom_page" class="tabcontent">
                 <form action="" id="container">
-                    <label for="dum_date">Data do Ultrassom:</label>
+                    <p id="gest">Idade Gestacional:</p>
+                    <p id="ult_result">Não calculada</p>
+                    <label for="ult_date" id="ult">Data do Ultrassom:</label>
                     <p><input type="date" id="ult_date" name="ult_date" onchange="dateCalc()"></p>
+                    <p id="prim">Primigesta?</p>
+                    <div class="toggle-button-cover" id="toggle_button">
+                        <div class="button-cover">
+                        <div class="button r" id="button-3">
+                            <input type="checkbox" class="checkbox" onchange="primHandler()"/>
+                            <div class="knobs"></div>
+                            <div class="layer"></div>
+                        </div>
+                    </div>
+                </div>
                 </form>
-                <p>Primigesta?</p>
-                <p id="choice_toggle">Não <label class="switch">
-                    <input type="checkbox">
-                    <span class="slider round"></span>
-                  </label> Sim</p>
-                <p>Idade Gestacional:</p>
-                <p id="ult_result">Não calculada</p>
-                
-                <!--<form action="" id="container">
-                    <p>Ultrassom (caixa de seleção de data)</p>
-                    <p>Feito até a 10ª semana? Sim (chave) Não</p>
-                    <p>Primigesta? Sim (chave) Não</p>
-                    <p>Idade Gestacional no ultrassom: (informação)</p>
-                    <p>Idade Gestacional: (resultado em semana e dias)</p>
-                </form>-->
-            </div>    
-        </body>
+                </div>
+            </div>
+            </div>
+        </div>
+    </body>
 </html>
