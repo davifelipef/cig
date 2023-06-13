@@ -6,6 +6,9 @@ window.onload = function(e){
 // Attach an event listener to the input element
 document.getElementById("dum_date").addEventListener("change", dateCalc);
 
+// Global var that checks the primigesta information button
+var prim_state = false;
+
 function openTab(evt, tabName) {
     // Declare all variables
     var i, tabcontent, tablinks;
@@ -25,7 +28,23 @@ function openTab(evt, tabName) {
     // Show the current tab, and add an "active" class to the button that opened the tab
     document.getElementById(tabName).style.display = "block";
     evt.currentTarget.className += " active";
+
+    document.getElementById("dum_date").value = "";
+    document.getElementById("dum_result").innerHTML = "Não calculada";
+
 } 
+
+// Function that handles the primigesta information toggle button
+function primHandler () {
+  //console.log("Button clicked!");
+  if (prim_state==false) {
+    prim_state = true;
+    console.log("Não ativado!");
+  } else {
+    prim_state = false;
+    console.log("Sim ativado!")
+  }
+}
 
 function dateCalc() {
   var today = new Date();
@@ -56,7 +75,7 @@ function dateCalc() {
     dum_result += `${daysDiff} ${daysDiff !== 1 ? 'dias' : 'dia'}`;
   }
 
-  console.log(dum_result); //Log used during development
+  //console.log(dum_result); //Log used during development
 
   if (dum_result.includes("NaN")) {
     document.getElementById("dum_result").innerHTML = "Não calculada.";
