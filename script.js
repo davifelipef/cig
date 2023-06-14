@@ -39,6 +39,7 @@ function openTab(evt, tabName) {
 
     document.getElementById("dum_date").value = "";
     document.getElementById("dum_result").innerHTML = "Não calculada";
+    document.getElementById("dpp_result").innerHTML = "Não calculada";
 
 } 
 
@@ -131,4 +132,6 @@ function dateCalc() {
       document.getElementById("dpp_result").innerHTML = formatted_dpp;
     }
   }
+  
+ 
 }
