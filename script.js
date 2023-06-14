@@ -104,7 +104,7 @@ function dateCalc() {
   }
 
   // Handles the dpp calculation
-  var dpp_result = 277 - diffDays + dpp_sum;
+  var dpp_result = 280 - diffDays + dpp_sum;
   dpp_result = parseInt(dpp_result);
   console.log("DPP result is :" + dpp_result);
 
