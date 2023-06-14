@@ -20,18 +20,22 @@
                     <p id="gest">Idade Gestacional:</p>
                     <p id="dum_result">Não calculada</p>
                     <label for="dum_date" id="dum">DUM:</label>
-                    <p><input type="date" id="dum_date" name="dum_date" onchange="dateCalc()"></p>
+                    <p id="date_select"><input type="date" id="dum_date" name="dum_date" onchange="dateCalc()"></p>
                     <p id="prim">Primigesta?</p>
                     <div class="toggle-button-cover" id="toggle_button">
                         <div class="button-cover">
                             <div class="button r" id="button-3">
-                                <input type="checkbox" class="checkbox" onchange="primHandler()"/>
+                                <input type="checkbox" class="checkbox" id="prim_button" onchange="primHandler()"/>
                                 <div class="knobs"></div>
                                 <div class="layer"></div>
                             </div>
                         </div>
                     </div>
+                    <label for="dpp_date" id="dum">DPP:</label>
+                    <p id="dpp_result">Não calculada</p>
                 </form>
+                
+                    
             </div>
             <!-- Second screen  -->
             <div id="Ultrassom_page" class="tabcontent">
