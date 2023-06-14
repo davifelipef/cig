@@ -1,8 +1,8 @@
 /* Config for the smallest screen: 180px */
 @media only screen and (min-width:180px) {
     body {
-        min-height: 96vh;
-        background:linear-gradient(18deg, #4B4E53, #FEE715);
+        min-height: 100vh;
+        background: #FEE715;
         padding-left: 0.5em;
         padding-right: 0.5em;
         margin: 0;
@@ -21,7 +21,7 @@
     .tab {
         overflow: hidden;
         border: 0.01em solid #000080;
-        background-color: #cfbd19;
+        background-color: #FEE715;
     }
     .tab button {
         background-color: inherit;
@@ -55,23 +55,19 @@
     
     /* Container that holds all content below the tab menu */
     #container {
-        padding-top: 0.3em;
         text-align: center; /* Centers all the content inside the container */
         line-height: 1em;
     }
-    #gest, #dum, #ult, #prim{
+    #gest, #dum, #ult, #prim, #dpp_date{
         font-weight: bolder;
         font-size: 1.1em;
-        padding-bottom: 0.5em;
-        padding-top: 0.5em;
     }
-    #dum_result, #ult_result {
+    #dum_result, #date_select, #prim_button, #ult_result, #dpp_result {
         font-weight: bolder;
-        font-size: 2em;
-        padding-bottom: 0.2em;
+        font-size: 1.5em;
         color: #000080;
         line-break: strict;
-        line-height: 1em;
+        line-height: 0.9;
     }
   
     /* Toggle button config */
@@ -79,7 +75,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 10em;
+        height: 3.8em;
         position: relative;
     }  
     .button-cover {
@@ -155,7 +151,7 @@
     #button-3 .checkbox:checked + .knobs:before {
         content: "SIM";
         left: 3.4em;
-        background-color: #03a9f4;
+        background-color: #000080;
     }
     #button-3 .checkbox:checked ~ .layer {
         background-color: #fcebeb;
