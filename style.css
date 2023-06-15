@@ -2,7 +2,7 @@
 @media only screen and (min-width:180px) {
     body {
         min-height: 100vh;
-        background: #FEE715;
+        background: linear-gradient(25deg, #f88379, #FEE715);
         padding-left: 0.5em;
         padding-right: 0.5em;
         margin: 0;
@@ -21,7 +21,7 @@
     .tab {
         overflow: hidden;
         border: 0.01em solid #000080;
-        background-color: #FEE715;
+        background-color: transparent;
     }
     .tab button {
         background-color: inherit;
