@@ -29,6 +29,7 @@
         border: none;
         outline: none;
         cursor: pointer;
+        font-size: 1em;
         font-weight: bold;
         padding: 14px 16px;
         transition: 0.3s;
@@ -60,7 +61,11 @@
     }
     #gest, #dum, #ult, #prim, #dpp_date{
         font-weight: bolder;
-        font-size: 1.1em;
+        font-size: 1.3em;
+    }
+    #dum_date, #ult_date {
+        font-weight: bolder;
+        font-size: 1em;
     }
     #dum_result, #date_select, #prim_button, #ult_result, #dpp_result {
         font-weight: bolder;
