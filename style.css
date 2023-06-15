@@ -65,7 +65,7 @@
     }
     #dum_date, #ult_date {
         font-weight: bolder;
-        font-size: 1em;
+        font-size: 0.8em;
     }
     #dum_result, #date_select, #prim_button, #ult_result, #dpp_result {
         font-weight: bolder;
