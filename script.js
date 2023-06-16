@@ -11,7 +11,7 @@ window.onload = function(e){
 // Global variable that checks the primigesta information button
 var prim_state = false;
 // Global variable that computes the days added to the DPP
-var dpp_sum = 7;
+var dpp_sum = 8;
 
 // Function that handles the tab menu
 function openTab(evt, tabName) {
@@ -43,11 +43,11 @@ function primHandler () {
     // activates it
     prim_state = true;
     // if dpp value to sum is 7
-    if (dpp_sum == 7) {
+    if (dpp_sum == 8) {
       // do nothing
     } else {
       // makes its value 7
-      dpp_sum = 7;
+      dpp_sum = 8;
       // calls the calculation function
       dateCalc();
     }
@@ -56,7 +56,7 @@ function primHandler () {
     // deactivates it
     prim_state = false;
     // sums 10, 3 more
-    dpp_sum = 10;
+    dpp_sum = 11;
     // calls the calculation function
     dateCalc();
   }
