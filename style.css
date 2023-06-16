@@ -45,7 +45,7 @@
     }
     .tabcontent {
         display: none;
-        padding: 6px 12px;
+        padding: 1em 1em;
         border-top: none;
         animation: fadeEffect 1s;  
     } 
@@ -67,12 +67,21 @@
         font-weight: bolder;
         font-size: 0.8em;
     }
-    #dum_result, #date_select, #prim_button, #ult_result, #dpp_result {
+    #dum_result, #date_select, #prim_button, #ult_result, #dpp_result, 
+    #ult_dpp_result {
         font-weight: bolder;
         font-size: 1.5em;
         color: #000080;
         line-break: strict;
         line-height: 0.9;
+    }
+    #ult_table {
+        margin: 0 auto; /* Center the table horizontally */
+        text-align: center; /* Center the table contents */
+    }
+    #weeks {
+        text-align: center;
+        line-height: 1em;
     }
   
     /* Toggle button config */
@@ -99,7 +108,7 @@
         position: relative;
         width: 4.6em;
         height: 2.2em;
-        margin: 0 auto; /* This is the one that centers the button horizontally */
+        margin: 0 auto; /* Centers the button horizontally */
         overflow: hidden;
     }
     .button.r,
