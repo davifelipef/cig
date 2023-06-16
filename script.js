@@ -11,7 +11,7 @@ window.onload = function(e){
 // Global variable that checks the primigesta information button
 var prim_state = false;
 // Global variable that computes the days added to the DPP
-var dpp_sum = 8;
+var dpp_sum = 7;
 
 // Function that handles the tab menu
 function openTab(evt, tabName) {
@@ -42,11 +42,11 @@ function primHandler () {
   if (prim_state==false) {
     // activates it
     prim_state = true;
-    // if dpp value to sum is 7
+    // if dpp value to sum is 8
     if (dpp_sum == 8) {
       // do nothing
     } else {
-      // makes its value 7
+      // makes its value 8
       dpp_sum = 8;
       // calls the calculation function
       dateCalc();
@@ -77,8 +77,9 @@ function dateCalc() {
   // divides the result by 7 to get the number of weeks
   var weeksDiff = Math.floor(diffDays / 7);
   /* gets the remainder of the division as the number of days
-  minus 1, since only the complete days counts */
+  and then makes it minus 1, since only the complete days counts */
   var daysDiff = diffDays % 7;
+  daysDiff -= 1;
   // creates the dum result variable
   var dum_result = '';
   // formats the texts to be displayed in the screen as weeks and days
