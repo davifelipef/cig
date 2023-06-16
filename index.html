@@ -34,8 +34,6 @@
                     <label for="dpp_date" id="dum">DPP:</label>
                     <p id="dpp_result">Não calculada</p>
                 </form>
-                
-                    
             </div>
             <!-- Second screen  -->
             <div id="Ultrassom_page" class="tabcontent">
@@ -43,21 +41,38 @@
                     <p id="gest">Idade Gestacional:</p>
                     <p id="ult_result">Não calculada</p>
                     <label for="ult_date" id="ult">Data do Ultrassom:</label>
-                    <p><input type="date" id="ult_date" name="ult_date" onchange="dateCalc()"></p>
+                    <p id="date_select"><input type="date" id="ult_date" name="ult_date" onchange="dateCalc()"></p>
+                    <p id="gest">Idade Gestacional no Ultrassom:</p>
+                    <table id="ult_table">
+                        <tr>
+                          <td>Semanas:</td>
+                          <td>Dias:</td>
+                        </tr>
+                        <tr>
+                          <td><input type="number" id="week_number" 
+                            name="week_number" 
+                            min="0" max="40" maxlength="2" 
+                            placeholder="0" onchange="dateCalc()"></td>
+                          <td><input type="number" id="days_number" 
+                            name="days_number" 
+                            min="0" max="6" maxlength="1" 
+                            placeholder="0" onchange="dateCalc()"></td>
+                        </tr>
+                    </table>
+                    <label for="ult_week"></label>
                     <p id="prim">Primigesta?</p>
                     <div class="toggle-button-cover" id="toggle_button">
                         <div class="button-cover">
-                        <div class="button r" id="button-3">
-                            <input type="checkbox" class="checkbox" onchange="primHandler()"/>
-                            <div class="knobs"></div>
-                            <div class="layer"></div>
+                            <div class="button r" id="button-3">
+                                <input type="checkbox" class="checkbox" id="prim_button" onchange="primHandler()"/>
+                                <div class="knobs"></div>
+                                <div class="layer"></div>
+                            </div>
                         </div>
                     </div>
-                </div>
+                    <label for="dpp_date" id="ult">DPP:</label>
+                    <p id="ult_dpp_result">Não calculada</p>
                 </form>
-                </div>
             </div>
-            </div>
-        </div>
-    </body>
+        </body>
 </html>
