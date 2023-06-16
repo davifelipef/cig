@@ -62,6 +62,7 @@
     #gest, #dum, #ult, #prim, #dpp_date{
         font-weight: bolder;
         font-size: 1.3em;
+        line-height: 1.3em;
     }
     #dum_date, #ult_date {
         font-weight: bolder;
@@ -73,7 +74,7 @@
         font-size: 1.5em;
         color: #000080;
         line-break: strict;
-        line-height: 0.9;
+        line-height: 0.9em;
     }
     #ult_table {
         margin: 0 auto; /* Center the table horizontally */
