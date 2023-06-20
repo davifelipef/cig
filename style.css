@@ -1,5 +1,5 @@
 /* Config for the smallest screen: 180px */
-@media only screen and (min-width:180px) {
+@media only screen and (min-width:480px) {
     body {
         min-height: 100vh;
         background: linear-gradient(25deg, #f88379, #FEE715);
